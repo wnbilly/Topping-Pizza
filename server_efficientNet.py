@@ -41,12 +41,14 @@ import sys, select
 #from torchmetrics.classification import MultilabelF1Score, MultilabelAccuracy
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+print("cuda:0" if torch.cuda.is_available() else "cpu")
 
 #if (torch.cuda.is_available()):
 #  !nvidia-smi  
 
 
 # ===================================== READ DATA
+print("Reading data")
 
 
 y_all = np.loadtxt(os.path.join(DATA_DIR, 'syntheticDataset/train/trainLabels.txt'))
@@ -67,6 +69,8 @@ print(y_test.shape)
 
 
 # ===================================== LOAD TRAIN IMAGES
+
+print("creating .npz and loading data in memory")
 
 train_data_path=os.path.join(DATA_DIR, 'syntheticDataset/train')
 
@@ -116,6 +120,7 @@ class myDataset(Dataset):
 
 # ===================================== CREATE DATASETs
 
+print("creating datasets")
 
 batch_size = 25
 
@@ -191,7 +196,7 @@ def train_model_multilabel(model, nlabel, trainloader, valloader, criterion, opt
       model.train()
 
       for inputs, targets in trainloader: # on itère sur les données par batch de batch_size (= 25)
-          inputs, targets = inputs.cuda()[0,:,:,:],targets.cuda()[0,:] # 25x3x224x224 et 25x10
+          inputs, targets = inputs.cpu()[0,:,:,:],targets.cpu()[0,:] # 25x3x224x224 et 25x10
 
           predictions = model(inputs)    ## on les fait rentrer dans le réseau
           targets = targets.to(torch.float) # FloatTensor needed
