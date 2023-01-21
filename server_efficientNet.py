@@ -46,6 +46,26 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 #  !nvidia-smi  
 
 
+# ===================================== READ DATA
+
+
+y_all = np.loadtxt(os.path.join(DATA_DIR, 'syntheticDataset/train/trainLabels.txt'))
+x_all = np.arange(y_all.shape[0])
+
+# Create train, val and test splits
+# x_train and x_val only contain image number (not the raw data)
+
+x_train, x_val, y_train, y_val = train_test_split(x_all, y_all, test_size=0.2, random_state=123)
+
+print(y_train.shape)
+
+# BILLY : Fichier test non-existant
+y_test = np.loadtxt(os.path.join(DATA_DIR, 'syntheticDataset/test/testLabels.txt'))
+x_test = np.arange(y_test.shape[0])
+
+print(y_test.shape)
+
+
 # ===================================== LOAD TRAIN IMAGES
 
 train_data_path=os.path.join(DATA_DIR, 'syntheticDataset/train')
