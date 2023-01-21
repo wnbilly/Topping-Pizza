@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import os
 import time
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from PIL import Image
 
 from tqdm import tqdm
@@ -42,10 +42,29 @@ import sys, select
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-if (torch.cuda.is_available()):
-  !nvidia-smi
-  
-  
+#if (torch.cuda.is_available()):
+#  !nvidia-smi  
+
+
+# ===================================== LOAD TRAIN IMAGES
+
+train_data_path=os.path.join(DATA_DIR, 'syntheticDataset/train')
+
+# Test if the numpy file exists
+if (os.path.exists(os.path.join(train_data_path, 'img_data_224.npz'))):
+  img_data_tensor = np.load(os.path.join(train_data_path, 'img_data_224.npz'))
+  img_all = img_data_tensor['img_data']
+else:
+  img_all = []
+
+  for idx in tqdm(x_all):
+      img_name = "{:04d}.png".format(idx+1)
+      x = Image.open(os.path.join(train_data_path, 'images', img_name))
+      img_all.append(np.array(x.resize((224,224))))
+
+  np.savez_compressed(os.path.join(train_data_path,'img_data_224.npz'), img_data=np.array(img_all))
+
+
 class myDataset(Dataset):
     """Pizza dataset"""
     
