@@ -196,7 +196,7 @@ def train_model_multilabel(model, nlabel, trainloader, valloader, criterion, opt
       model.train()
 
       for inputs, targets in trainloader: # on itère sur les données par batch de batch_size (= 25)
-          inputs, targets = inputs.cpu()[0,:,:,:],targets.cpu()[0,:] # 25x3x224x224 et 25x10
+          inputs, targets = inputs.cuda(),targets.cuda() # 25x3x224x224 et 25x10
 
           predictions = model(inputs)    ## on les fait rentrer dans le réseau
           targets = targets.to(torch.float) # FloatTensor needed
@@ -218,6 +218,7 @@ def train_model_multilabel(model, nlabel, trainloader, valloader, criterion, opt
 trainloader=train_dataloader
 valloader=val_dataloader
 
+
 # Read the last learned network (if stored)
 if (os.path.exists(os.path.join("Networks", 'network_{:s}.pth'.format(tag)))):
     print('Resume from last learning step')
@@ -235,12 +236,12 @@ scheduler = None
 i = 0
 
 while True:
-	max_epoch = 5 # initial 20
+	max_epoch = 20 # initial 20
 	print(f"Total Epoch {i*max_epoch}")
 	
 	# Learning
 	learned_model, train_error, test_error, train_losses = train_model_multilabel(network, nlabel, trainloader, valloader, criterion, optimizer, scheduler, num_epochs=max_epoch)
-	torch.save(learned_model, os.path.join("Networks", 'network_{:s}_{:d}.pth'.format(tag, i)))
+	torch.save(learned_model, os.path.join("Networks", 'network_{:s}_{:d}.pth'.format(tag, (i+1)*max_epoch)))
 
 	network = learned_model
 	print("You have 1 second to answer!")
