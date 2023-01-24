@@ -4,15 +4,12 @@ import pandas as pd
 import numpy as np
 import os
 import time
-#import matplotlib.pyplot as plt
 from PIL import Image
 
 from tqdm import tqdm
 
 import seaborn as sns
 sns.set_style('darkgrid')
-
-#import shutil
 
 import sys
 if not sys.warnoptions:
@@ -39,6 +36,11 @@ import sys, select
 
 #!pip install torchmetrics
 #from torchmetrics.classification import MultilabelF1Score, MultilabelAccuracy
+
+from IPython.display import clear_output
+
+import copy
+import random
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -149,12 +151,8 @@ img_data_train = img_data[x_train,:,:,:]
 train_set_raw = myDataset(x_train, y_train, img_path=train_data_path, img_data=img_data_train, transform = train_transform)
 train_dataloader = DataLoader(train_set_raw, batch_size=batch_size, shuffle=True, **kwargs)
 
-img_data_val = img_data[x_val,:,:,:]
-val_set_raw = myDataset(x_val, y_val, img_path=train_data_path, img_data=img_data_val, transform = val_transform)
-val_dataloader = DataLoader(val_set_raw, batch_size=batch_size, shuffle=False, **kwargs)
 
 test_data_path=img_path = os.path.join(DATA_DIR, 'syntheticDataset/test/images')
-
 test_set_raw = myDataset(x_test, y_test, img_path=test_data_path, transform = val_transform)
 test_dataloader = DataLoader(test_set_raw, batch_size=batch_size, shuffle=False, **kwargs)
 
@@ -176,21 +174,8 @@ tag = "efficientNet"
 
 # ======================================= TRAIN LOOP
 
-#from sklearn.metrics import confusion_matrix
-from IPython.display import clear_output
-
-import copy
-import random
-
-testloader = test_dataloader
-
-def train_model_multilabel(model, nlabel, trainloader, valloader, criterion, optimizer, scheduler, num_epochs=5):
+def train_model_multilabel(model, nlabel, trainloader, criterion, optimizer, scheduler, num_epochs=5):
   # list for saving accuracies
-  train_perf = []
-  test_perf = []
-  train_losses = []
-
-
   for epoch in range(num_epochs): # on va iterer sur toutes les données num_epochs fois
       print("Epoch {}".format(epoch))
       model.train()
@@ -205,24 +190,71 @@ def train_model_multilabel(model, nlabel, trainloader, valloader, criterion, opt
           optimizer.zero_grad() ## supprime les gradients courants
           loss.backward() ## le gradient -- la magie par rapport à comment c'était long en cours :-)
           optimizer.step() ## on actualise les poids pour que la sortie courante soit plus proche que la sortie voulue
-          #train_losses.append(loss)
+
           if random.randint(0,90)==0:
               print("\tloss=",loss) ## on affiche pour valider que ça diverge pas
+
       # Learning step
 
-  return model, train_perf, test_perf, train_losses
+  return model
+
+
+# ======================================= evaluation
+
+def model_evaluation(network, nb_labels, dataloader, labels=None, display=0):
+
+  # set the model to evaluation mode
+  network.eval()
+
+  # create the vectors necessary for KPI
+  perf_label_test = np.zeros((1,nb_labels))
+  all_eval_pred = np.zeros(shape=(0,nb_labels))
+  all_eval_targets = np.zeros((0,nb_labels))
+
+
+  # tell not to reserve memory space for gradients (much faster)
+  with torch.no_grad():
+      for inputs, targets in tqdm(dataloader, ncols=80):
+
+          inputs = inputs.to(device)
+          targets = targets.to(device)
+
+          # compute outputs
+          outputs = network(inputs)
+          outputs_np = outputs.cpu().detach().numpy()
+          targets_np = targets.cpu().detach().numpy()
+
+          # compute the predictions
+          pred = (outputs_np > 0)
+
+          # Rq : multilabel confusion matrix does not seem to be useful as it uses a one-vs-rest representation for each class
+
+          # concatenate pred and targets to calculate the classification report
+          all_eval_pred = np.concatenate((all_eval_pred, pred))
+          all_eval_targets = np.concatenate((all_eval_targets, targets_np))
+          # update the performance
+          perf_label_test = perf_label_test + (targets_np == pred).sum(axis=0)
+
+          # https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics
+          # https://scikit-learn.org/stable/modules/model_evaluation.html#classification-report
+
+
+  # Calculate KPI
+  perf_label_test = perf_label_test / len(dataloader.dataset)
+  metrics_report = classification_report(all_eval_targets, all_eval_pred, target_names=labels)
+
+  # Prints the classification report and the performance (per label)
+  if display==1:
+    print("\nPerformance per label :",perf_label_test)
+    print("Mean of performance :",sum(perf_label_test[0])/len(perf_label_test[0]))
+    print(metrics_report)
+
+  return perf_label_test, metrics_report
+
 
 # ====================================================== TRAIN ROUTINE
 
- # Define data loaders
-trainloader=train_dataloader
-valloader=val_dataloader
-
-
-# Read the last learned network (if stored)
-if (os.path.exists(os.path.join("Networks", 'network_{:s}.pth'.format(tag)))):
-    print('Resume from last learning step')
-    network = torch.load(os.path.join("Networks", 'network_{:s}.pth'.format(tag)))
+topping_labels = ["pepperoni", "mushrooms", "peppers", "olives", "basil", "bacon", "broccoli", "pineapple", "tomatoes", "onions"]
 
 # Transfer network to GPU
 network.to(device)
@@ -236,27 +268,25 @@ scheduler = None
 i = 0
 
 while True:
-	max_epoch = 20 # initial 20
-	print(f"Total Epoch {i*max_epoch}")
+	max_epoch = 50
 	
 	# Learning
-	learned_model, train_error, test_error, train_losses = train_model_multilabel(network, nlabel, trainloader, valloader, criterion, optimizer, scheduler, num_epochs=max_epoch)
-	torch.save(learned_model, os.path.join("Networks", 'network_{:s}_{:d}.pth'.format(tag, (i+1)*max_epoch)))
-
-	network = learned_model
+	network = train_model_multilabel(network, nlabel, train_dataloader, criterion, optimizer, scheduler, num_epochs=max_epoch)
+	
+	# print infos
+	i += 1
+	print(f"Total Epoch {i*max_epoch}")
+	model_evaluation(network, len(topping_labels), test_dataloader, topping_labels, display=1)
+	torch.save(network, os.path.join("Networks", 'network_synthetic_bis_{:s}.pth'.format(tag)))
+	
+	# Leave training
 	print("You have 1 second to answer!")
-
 	should_stop, _, _ = select.select([sys.stdin], [], [], 1)
-
 	if should_stop:
 	  print("You said something. Stoping!")
 	  break
 	else:
 	  print("You said nothing! Continuing!")
-	
-	i += 1
 
-	
-	
 	
 

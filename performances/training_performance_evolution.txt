@@ -1,0 +1,781 @@
+Total Epoch 0
+
+Performance per label : [[0.35412475 0.50905433 0.58350101 0.3722334  0.6498994  0.6639839
+  0.62374245 0.29979879 0.66197183 0.34004024]]
+Mean of performance : 0.5058350100603622
+              precision    recall  f1-score   support
+
+   pepperoni       0.25      0.69      0.37       137
+   mushrooms       0.27      0.40      0.33       146
+     peppers       0.28      0.22      0.25       152
+      olives       0.29      0.76      0.42       146
+       basil       0.16      0.05      0.07       145
+       bacon       0.22      0.01      0.02       162
+    broccoli       0.42      0.29      0.34       169
+   pineapple       0.30      1.00      0.46       149
+    tomatoes       0.30      0.02      0.03       164
+      onions       0.33      0.96      0.50       168
+
+   micro avg       0.30      0.43      0.35      1538
+   macro avg       0.28      0.44      0.28      1538
+weighted avg       0.29      0.43      0.28      1538
+ samples avg       0.30      0.43      0.33      1538
+
+Total Epoch 50
+
+Performance per label : [[0.94567404 0.86720322 0.83702213 0.95975855 0.89738431 0.88128773
+  0.92152918 0.85915493 0.91348089 0.94366197]]
+Mean of performance : 0.90261569416499
+              precision    recall  f1-score   support
+
+   pepperoni       0.88      0.93      0.90       137
+   mushrooms       0.72      0.91      0.80       146
+     peppers       0.67      0.91      0.77       152
+      olives       0.89      0.99      0.94       146
+       basil       0.76      0.95      0.84       145
+       bacon       0.75      0.95      0.84       162
+    broccoli       0.83      0.97      0.89       169
+   pineapple       0.69      0.98      0.81       149
+    tomatoes       0.81      0.97      0.88       164
+      onions       0.86      0.99      0.92       168
+
+   micro avg       0.78      0.96      0.86      1538
+   macro avg       0.78      0.96      0.86      1538
+weighted avg       0.79      0.96      0.86      1538
+ samples avg       0.78      0.96      0.83      1538
+
+Total Epoch 100
+
+Performance per label : [[0.92354125 0.94366197 0.76458753 0.98591549 0.79275654 0.9416499
+  0.89738431 0.92354125 0.91750503 0.96780684]]
+Mean of performance : 0.9058350100603623
+              precision    recall  f1-score   support
+
+   pepperoni       0.79      0.99      0.88       137
+   mushrooms       0.87      0.95      0.91       146
+     peppers       0.57      0.98      0.72       152
+      olives       0.99      0.97      0.98       146
+       basil       0.59      0.99      0.74       145
+       bacon       0.88      0.94      0.91       162
+    broccoli       0.78      0.98      0.87       169
+   pineapple       0.80      0.99      0.89       149
+    tomatoes       0.81      0.98      0.89       164
+      onions       0.91      1.00      0.95       168
+
+   micro avg       0.78      0.98      0.87      1538
+   macro avg       0.80      0.98      0.87      1538
+weighted avg       0.80      0.98      0.87      1538
+ samples avg       0.77      0.97      0.84      1538
+
+Total Epoch 150
+
+Performance per label : [[0.93762575 0.95171026 0.83098592 0.97987928 0.92957746 0.9637827
+  0.85714286 0.97585513 0.91146881 0.96579477]]
+Mean of performance : 0.9303822937625755
+              precision    recall  f1-score   support
+
+   pepperoni       0.82      0.99      0.90       137
+   mushrooms       0.89      0.96      0.92       146
+     peppers       0.65      0.98      0.78       152
+      olives       0.95      0.98      0.97       146
+       basil       0.82      0.98      0.89       145
+       bacon       0.94      0.95      0.94       162
+    broccoli       0.71      0.99      0.83       169
+   pineapple       0.94      0.99      0.96       149
+    tomatoes       0.80      0.98      0.88       164
+      onions       0.91      1.00      0.95       168
+
+   micro avg       0.83      0.98      0.90      1538
+   macro avg       0.84      0.98      0.90      1538
+weighted avg       0.84      0.98      0.90      1538
+ samples avg       0.82      0.97      0.87      1538
+
+Total Epoch 250
+
+Performance per label : [[0.95975855 0.97183099 0.93360161 0.99597586 0.93762575 0.9416499
+  0.94768612 0.97384306 0.90945674 0.97384306]]
+Mean of performance : 0.9545271629778671
+              precision    recall  f1-score   support
+
+   pepperoni       0.88      0.99      0.93       137
+   mushrooms       0.92      0.99      0.95       146
+     peppers       0.84      0.97      0.90       152
+      olives       0.99      0.99      0.99       146
+       basil       0.83      0.99      0.90       145
+       bacon       0.86      0.98      0.92       162
+    broccoli       0.87      0.99      0.93       169
+   pineapple       0.93      0.99      0.96       149
+    tomatoes       0.79      0.98      0.88       164
+      onions       0.93      1.00      0.96       168
+
+   micro avg       0.88      0.99      0.93      1538
+   macro avg       0.89      0.99      0.93      1538
+weighted avg       0.88      0.99      0.93      1538
+ samples avg       0.87      0.98      0.91      1538
+
+Total Epoch 300
+
+Performance per label : [[0.97585513 0.97987928 0.82696177 0.96981891 0.95573441 0.95774648
+  0.9778672  0.96780684 0.91549296 0.99798793]]
+Mean of performance : 0.9525150905432594
+              precision    recall  f1-score   support
+
+   pepperoni       0.93      0.99      0.96       137
+   mushrooms       0.94      0.99      0.97       146
+     peppers       0.64      0.99      0.78       152
+      olives       0.91      1.00      0.95       146
+       basil       0.88      0.98      0.93       145
+       bacon       0.90      0.98      0.94       162
+    broccoli       0.96      0.98      0.97       169
+   pineapple       0.91      0.99      0.95       149
+    tomatoes       0.81      0.98      0.88       164
+      onions       0.99      1.00      1.00       168
+
+   micro avg       0.88      0.99      0.93      1538
+   macro avg       0.89      0.99      0.93      1538
+weighted avg       0.89      0.99      0.93      1538
+ samples avg       0.87      0.98      0.90      1538
+
+Total Epoch 350
+
+Performance per label : [[0.89738431 0.97183099 0.95975855 0.99195171 0.91348089 0.9054326
+  0.94969819 0.99195171 0.96981891 1.        ]]
+Mean of performance : 0.9551307847082494
+              precision    recall  f1-score   support
+
+   pepperoni       0.73      0.99      0.84       137
+   mushrooms       0.92      0.99      0.95       146
+     peppers       0.91      0.97      0.94       152
+      olives       0.98      0.99      0.99       146
+       basil       0.78      0.99      0.87       145
+       bacon       0.78      0.98      0.87       162
+    broccoli       0.87      1.00      0.93       169
+   pineapple       0.99      0.99      0.99       149
+    tomatoes       0.94      0.98      0.96       164
+      onions       1.00      1.00      1.00       168
+
+   micro avg       0.88      0.99      0.93      1538
+   macro avg       0.89      0.99      0.93      1538
+weighted avg       0.89      0.99      0.93      1538
+ samples avg       0.87      0.98      0.91      1538
+
+Total Epoch 450
+
+Performance per label : [[0.98189135 0.99195171 0.93963783 0.99798793 0.92756539 0.98189135
+  0.93561368 0.9416499  0.95774648 0.98993964]]
+Mean of performance : 0.9645875251509055
+              precision    recall  f1-score   support
+
+   pepperoni       0.94      0.99      0.97       137
+   mushrooms       1.00      0.97      0.99       146
+     peppers       0.85      0.97      0.91       152
+      olives       1.00      0.99      1.00       146
+       basil       0.81      0.99      0.89       145
+       bacon       0.97      0.98      0.97       162
+    broccoli       0.85      0.99      0.91       169
+   pineapple       0.84      0.99      0.91       149
+    tomatoes       0.90      0.98      0.94       164
+      onions       0.97      1.00      0.99       168
+
+   micro avg       0.91      0.99      0.95      1538
+   macro avg       0.91      0.99      0.95      1538
+weighted avg       0.91      0.99      0.95      1538
+ samples avg       0.90      0.98      0.92      1538
+
+Total Epoch 500
+
+Performance per label : [[0.98792757 0.96579477 0.92152918 0.99798793 0.9778672  0.9637827
+  0.9778672  0.9778672  0.95372233 0.9778672 ]]
+Mean of performance : 0.9702213279678069
+              precision    recall  f1-score   support
+
+   pepperoni       0.97      0.99      0.98       137
+   mushrooms       0.90      0.99      0.94       146
+     peppers       0.81      0.98      0.88       152
+      olives       1.00      0.99      1.00       146
+       basil       0.96      0.97      0.96       145
+       bacon       0.91      0.98      0.95       162
+    broccoli       0.95      0.99      0.97       169
+   pineapple       0.94      0.99      0.96       149
+    tomatoes       0.88      0.99      0.93       164
+      onions       0.94      1.00      0.97       168
+
+   micro avg       0.92      0.99      0.95      1538
+   macro avg       0.93      0.99      0.95      1538
+weighted avg       0.92      0.99      0.95      1538
+ samples avg       0.91      0.98      0.94      1538
+
+Total Epoch 550
+
+Performance per label : [[0.94366197 0.97585513 0.95171026 0.99597586 0.94969819 0.97384306
+  0.98792757 0.99597586 0.98390342 0.98792757]]
+Mean of performance : 0.9746478873239436
+              precision    recall  f1-score   support
+
+   pepperoni       0.83      0.99      0.91       137
+   mushrooms       0.93      0.99      0.96       146
+     peppers       0.89      0.97      0.92       152
+      olives       0.99      0.99      0.99       146
+       basil       0.86      0.99      0.92       145
+       bacon       0.95      0.98      0.96       162
+    broccoli       0.98      0.99      0.98       169
+   pineapple       1.00      0.99      0.99       149
+    tomatoes       0.98      0.98      0.98       164
+      onions       0.97      1.00      0.98       168
+
+   micro avg       0.94      0.99      0.96      1538
+   macro avg       0.94      0.99      0.96      1538
+weighted avg       0.94      0.99      0.96      1538
+ samples avg       0.93      0.98      0.94      1538
+
+Total Epoch 600
+
+Performance per label : [[0.94768612 0.98993964 0.94567404 0.98993964 0.98390342 0.98792757
+  0.96579477 0.94567404 0.95573441 1.        ]]
+Mean of performance : 0.9712273641851107
+              precision    recall  f1-score   support
+
+   pepperoni       0.84      0.99      0.91       137
+   mushrooms       0.97      0.99      0.98       146
+     peppers       0.87      0.97      0.92       152
+      olives       0.97      0.99      0.98       146
+       basil       0.98      0.97      0.97       145
+       bacon       0.99      0.97      0.98       162
+    broccoli       0.91      0.99      0.95       169
+   pineapple       0.85      0.99      0.92       149
+    tomatoes       0.89      0.98      0.94       164
+      onions       1.00      1.00      1.00       168
+
+   micro avg       0.93      0.98      0.95      1538
+   macro avg       0.93      0.98      0.96      1538
+weighted avg       0.93      0.98      0.96      1538
+ samples avg       0.92      0.98      0.94      1538
+
+Total Epoch 650
+
+Performance per label : [[0.99396378 0.99195171 0.9195171  0.98591549 0.97987928 0.9637827
+  0.98390342 0.96579477 0.9778672  0.99597586]]
+Mean of performance : 0.9758551307847083
+              precision    recall  f1-score   support
+
+   pepperoni       0.99      0.99      0.99       137
+   mushrooms       1.00      0.97      0.99       146
+     peppers       0.80      0.98      0.88       152
+      olives       0.95      1.00      0.98       146
+       basil       0.96      0.97      0.97       145
+       bacon       0.92      0.98      0.95       162
+    broccoli       0.97      0.99      0.98       169
+   pineapple       0.91      0.99      0.95       149
+    tomatoes       0.95      0.98      0.97       164
+      onions       0.99      1.00      0.99       168
+
+   micro avg       0.94      0.98      0.96      1538
+   macro avg       0.94      0.98      0.96      1538
+weighted avg       0.94      0.98      0.96      1538
+ samples avg       0.93      0.97      0.95      1538
+
+Total Epoch 700
+
+Performance per label : [[0.95774648 0.98591549 0.97384306 0.99597586 0.96981891 0.98390342
+  0.93762575 0.98591549 0.98993964 0.98591549]]
+Mean of performance : 0.9766599597585515
+              precision    recall  f1-score   support
+
+   pepperoni       0.87      0.99      0.93       137
+   mushrooms       0.97      0.99      0.98       146
+     peppers       0.95      0.96      0.96       152
+      olives       0.99      0.99      0.99       146
+       basil       0.91      0.99      0.95       145
+       bacon       0.97      0.98      0.98       162
+    broccoli       0.84      1.00      0.92       169
+   pineapple       0.97      0.99      0.98       149
+    tomatoes       0.99      0.98      0.98       164
+      onions       0.96      1.00      0.98       168
+
+   micro avg       0.94      0.99      0.96      1538
+   macro avg       0.94      0.99      0.96      1538
+weighted avg       0.94      0.99      0.96      1538
+ samples avg       0.93      0.98      0.95      1538
+
+Total Epoch 750
+
+Performance per label : [[0.98390342 0.99195171 0.94768612 0.99195171 0.94567404 0.97183099
+  0.95573441 0.98792757 0.98591549 1.        ]]
+Mean of performance : 0.9762575452716298
+              precision    recall  f1-score   support
+
+   pepperoni       0.95      0.99      0.97       137
+   mushrooms       1.00      0.97      0.99       146
+     peppers       0.87      0.97      0.92       152
+      olives       0.97      1.00      0.99       146
+       basil       0.85      0.99      0.91       145
+       bacon       0.94      0.98      0.96       162
+    broccoli       0.89      0.99      0.94       169
+   pineapple       0.97      0.99      0.98       149
+    tomatoes       0.98      0.98      0.98       164
+      onions       1.00      1.00      1.00       168
+
+   micro avg       0.94      0.99      0.96      1538
+   macro avg       0.94      0.99      0.96      1538
+weighted avg       0.94      0.99      0.96      1538
+ samples avg       0.93      0.98      0.95      1538
+
+Total Epoch 800
+
+Performance per label : [[0.92354125 0.99597586 0.98189135 0.98189135 0.9637827  0.96177062
+  0.98993964 0.99396378 0.96177062 0.97987928]]
+Mean of performance : 0.9734406438631791
+              precision    recall  f1-score   support
+
+   pepperoni       0.79      0.99      0.88       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.99      0.95      0.97       152
+      olives       0.94      1.00      0.97       146
+       basil       0.90      0.98      0.94       145
+       bacon       0.91      0.98      0.94       162
+    broccoli       0.99      0.98      0.99       169
+   pineapple       0.99      0.99      0.99       149
+    tomatoes       0.91      0.98      0.94       164
+      onions       0.94      1.00      0.97       168
+
+   micro avg       0.93      0.98      0.96      1538
+   macro avg       0.94      0.98      0.96      1538
+weighted avg       0.94      0.98      0.96      1538
+ samples avg       0.93      0.97      0.94      1538
+
+Total Epoch 850
+
+Performance per label : [[0.99396378 0.98993964 0.94969819 0.98993964 0.9778672  0.98792757
+  0.97384306 0.9778672  0.94567404 0.99597586]]
+Mean of performance : 0.9782696177062375
+              precision    recall  f1-score   support
+
+   pepperoni       0.99      0.99      0.99       137
+   mushrooms       0.98      0.99      0.98       146
+     peppers       0.88      0.97      0.92       152
+      olives       0.97      1.00      0.98       146
+       basil       0.95      0.98      0.96       145
+       bacon       1.00      0.96      0.98       162
+    broccoli       0.93      1.00      0.96       169
+   pineapple       0.94      0.99      0.96       149
+    tomatoes       0.86      0.99      0.92       164
+      onions       0.99      1.00      0.99       168
+
+   micro avg       0.95      0.99      0.97      1538
+   macro avg       0.95      0.99      0.97      1538
+weighted avg       0.95      0.99      0.97      1538
+ samples avg       0.94      0.98      0.95      1538
+
+Total Epoch 900
+
+Performance per label : [[0.99396378 0.99195171 0.89939638 0.98792757 0.98390342 0.9637827
+  0.98993964 0.97987928 0.9637827  0.98792757]]
+Mean of performance : 0.9742454728370221
+              precision    recall  f1-score   support
+
+   pepperoni       0.99      0.99      0.99       137
+   mushrooms       1.00      0.97      0.99       146
+     peppers       0.76      0.98      0.86       152
+      olives       0.96      1.00      0.98       146
+       basil       0.97      0.98      0.97       145
+       bacon       0.91      0.98      0.95       162
+    broccoli       0.98      0.99      0.99       169
+   pineapple       0.95      0.99      0.97       149
+    tomatoes       0.91      0.99      0.95       164
+      onions       0.97      1.00      0.98       168
+
+   micro avg       0.93      0.99      0.96      1538
+   macro avg       0.94      0.99      0.96      1538
+weighted avg       0.94      0.99      0.96      1538
+ samples avg       0.93      0.98      0.95      1538
+
+Total Epoch 950
+
+Performance per label : [[0.9778672  0.99597586 0.96177062 0.99597586 0.97585513 0.97585513
+  0.98591549 0.99597586 0.96780684 0.99798793]]
+Mean of performance : 0.9830985915492958
+              precision    recall  f1-score   support
+
+   pepperoni       0.93      0.99      0.96       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.91      0.97      0.94       152
+      olives       0.99      0.99      0.99       146
+       basil       0.94      0.98      0.96       145
+       bacon       0.95      0.98      0.96       162
+    broccoli       0.96      1.00      0.98       169
+   pineapple       1.00      0.99      0.99       149
+    tomatoes       0.92      0.99      0.95       164
+      onions       0.99      1.00      1.00       168
+
+   micro avg       0.96      0.99      0.97      1538
+   macro avg       0.96      0.99      0.97      1538
+weighted avg       0.96      0.99      0.97      1538
+ samples avg       0.95      0.98      0.96      1538
+
+Total Epoch 1000
+
+Performance per label : [[0.98189135 0.99597586 0.97585513 0.99798793 0.97183099 0.97585513
+  0.99195171 0.99597586 0.98792757 0.98993964]]
+Mean of performance : 0.9865191146881287
+              precision    recall  f1-score   support
+
+   pepperoni       0.94      0.99      0.97       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.97      0.95      0.96       152
+      olives       1.00      0.99      1.00       146
+       basil       0.92      0.99      0.95       145
+       bacon       0.95      0.98      0.96       162
+    broccoli       0.99      0.99      0.99       169
+   pineapple       1.00      0.99      0.99       149
+    tomatoes       0.98      0.99      0.98       164
+      onions       0.97      1.00      0.99       168
+
+   micro avg       0.97      0.99      0.98      1538
+   macro avg       0.97      0.99      0.98      1538
+weighted avg       0.97      0.99      0.98      1538
+ samples avg       0.96      0.98      0.97      1538
+
+Total Epoch 1050
+
+Performance per label : [[0.9637827  0.99798793 0.9637827  0.99396378 0.98792757 0.97585513
+  0.98591549 0.99597586 0.98390342 0.99195171]]
+Mean of performance : 0.9841046277665996
+              precision    recall  f1-score   support
+
+   pepperoni       0.89      0.99      0.94       137
+   mushrooms       1.00      0.99      1.00       146
+     peppers       0.91      0.97      0.94       152
+      olives       0.99      0.99      0.99       146
+       basil       0.98      0.98      0.98       145
+       bacon       0.95      0.98      0.96       162
+    broccoli       0.97      0.99      0.98       169
+   pineapple       1.00      0.99      0.99       149
+    tomatoes       0.96      0.99      0.98       164
+      onions       0.98      1.00      0.99       168
+
+   micro avg       0.96      0.99      0.97      1538
+   macro avg       0.96      0.99      0.97      1538
+weighted avg       0.96      0.99      0.97      1538
+ samples avg       0.96      0.98      0.96      1538
+
+Total Epoch 1100
+
+Performance per label : [[0.97987928 0.99597586 0.9054326  0.99798793 0.95372233 0.97987928
+  0.97384306 0.99195171 0.97384306 0.99798793]]
+Mean of performance : 0.975050301810865
+              precision    recall  f1-score   support
+
+   pepperoni       0.94      0.99      0.96       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.77      0.98      0.86       152
+      olives       1.00      0.99      1.00       146
+       basil       0.87      0.99      0.93       145
+       bacon       0.97      0.96      0.97       162
+    broccoli       0.94      0.99      0.96       169
+   pineapple       0.99      0.99      0.99       149
+    tomatoes       0.94      0.98      0.96       164
+      onions       0.99      1.00      1.00       168
+
+   micro avg       0.94      0.99      0.96      1538
+   macro avg       0.94      0.99      0.96      1538
+weighted avg       0.94      0.99      0.96      1538
+ samples avg       0.94      0.98      0.95      1538
+
+Total Epoch 1150
+
+Performance per label : [[0.97183099 0.99396378 0.97585513 0.99597586 0.97987928 0.98792757
+  0.98390342 0.99597586 0.98390342 1.        ]]
+Mean of performance : 0.9869215291750504
+              precision    recall  f1-score   support
+
+   pepperoni       0.91      0.99      0.95       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.96      0.96      0.96       152
+      olives       0.99      0.99      0.99       146
+       basil       0.94      0.99      0.97       145
+       bacon       1.00      0.96      0.98       162
+    broccoli       0.97      0.99      0.98       169
+   pineapple       1.00      0.99      0.99       149
+    tomatoes       0.96      0.99      0.98       164
+      onions       1.00      1.00      1.00       168
+
+   micro avg       0.97      0.99      0.98      1538
+   macro avg       0.97      0.99      0.98      1538
+weighted avg       0.97      0.99      0.98      1538
+ samples avg       0.96      0.98      0.97      1538
+
+Total Epoch 1200
+
+Performance per label : [[0.98591549 0.99597586 0.92354125 0.99798793 0.97183099 0.97987928
+  0.99396378 0.98792757 0.97585513 0.98591549]]
+Mean of performance : 0.9798792756539235
+              precision    recall  f1-score   support
+
+   pepperoni       0.96      0.99      0.97       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.82      0.97      0.89       152
+      olives       1.00      0.99      1.00       146
+       basil       0.93      0.98      0.95       145
+       bacon       0.96      0.98      0.97       162
+    broccoli       0.99      0.99      0.99       169
+   pineapple       0.97      0.99      0.98       149
+    tomatoes       0.94      0.99      0.96       164
+      onions       0.96      1.00      0.98       168
+
+   micro avg       0.95      0.99      0.97      1538
+   macro avg       0.95      0.99      0.97      1538
+weighted avg       0.95      0.99      0.97      1538
+ samples avg       0.95      0.98      0.96      1538
+
+Total Epoch 1250
+
+Performance per label : [[0.97183099 0.99597586 0.96780684 0.98993964 0.97384306 0.98390342
+  0.98993964 0.99195171 0.97384306 0.99798793]]
+Mean of performance : 0.9837022132796779
+              precision    recall  f1-score   support
+
+   pepperoni       0.91      0.99      0.95       137
+   mushrooms       1.00      0.99      0.99       146
+     peppers       0.93      0.97      0.95       152
+      olives       0.97      1.00      0.98       146
+       basil       0.93      0.99      0.96       145
+       bacon       0.98      0.97      0.98       162
+    broccoli       0.98      0.99      0.99       169
+   pineapple       0.99      0.99      0.99       149
+    tomatoes       0.94      0.99      0.96       164
+      onions       0.99      1.00      1.00       168
+
+   micro avg       0.96      0.99      0.97      1538
+   macro avg       0.96      0.99      0.97      1538
+weighted avg       0.96      0.99      0.97      1538
+ samples avg       0.96      0.98      0.97      1538
+
+Total Epoch 1300
+
+Performance per label : [[0.98993964 0.99798793 0.96981891 0.99396378 0.98792757 0.95975855
+  0.99597586 0.99597586 0.98591549 0.99597586]]
+Mean of performance : 0.9873239436619718
+              precision    recall  f1-score   support
+
+   pepperoni       0.97      0.99      0.98       137
+   mushrooms       1.00      0.99      1.00       146
+     peppers       0.93      0.97      0.95       152
+      olives       0.99      0.99      0.99       146
+       basil       0.98      0.98      0.98       145
+       bacon       0.90      0.98      0.94       162
+    broccoli       0.99      1.00      0.99       169
+   pineapple       1.00      0.99      0.99       149
+    tomatoes       0.98      0.98      0.98       164
+      onions       0.99      1.00      0.99       168
+
+   micro avg       0.97      0.99      0.98      1538
+   macro avg       0.97      0.99      0.98      1538
+weighted avg       0.97      0.99      0.98      1538
+ samples avg       0.96      0.98      0.97      1538
+
+Total Epoch 1350
+
+Performance per label : [[0.99195171 0.99396378 0.98792757 0.99798793 0.96780684 0.9778672
+  0.99195171 0.98390342 0.98189135 1.        ]]
+Mean of performance : 0.9875251509054325
+              precision    recall  f1-score   support
+
+   pepperoni       0.99      0.98      0.99       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       1.00      0.96      0.98       152
+      olives       1.00      0.99      1.00       146
+       basil       0.91      0.99      0.95       145
+       bacon       0.95      0.98      0.97       162
+    broccoli       0.99      0.99      0.99       169
+   pineapple       0.96      0.99      0.97       149
+    tomatoes       0.96      0.98      0.97       164
+      onions       1.00      1.00      1.00       168
+
+   micro avg       0.97      0.99      0.98      1538
+   macro avg       0.98      0.98      0.98      1538
+weighted avg       0.98      0.99      0.98      1538
+ samples avg       0.97      0.97      0.97      1538
+
+Total Epoch 1400
+
+Performance per label : [[0.99396378 0.99396378 0.95372233 0.99396378 0.96780684 0.97585513
+  0.98390342 0.99195171 0.98591549 1.        ]]
+Mean of performance : 0.9841046277665996
+              precision    recall  f1-score   support
+
+   pepperoni       1.00      0.98      0.99       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.89      0.97      0.93       152
+      olives       0.99      0.99      0.99       146
+       basil       0.91      0.99      0.95       145
+       bacon       0.95      0.98      0.96       162
+    broccoli       0.97      0.99      0.98       169
+   pineapple       0.99      0.99      0.99       149
+    tomatoes       0.98      0.98      0.98       164
+      onions       1.00      1.00      1.00       168
+
+   micro avg       0.96      0.98      0.97      1538
+   macro avg       0.97      0.98      0.97      1538
+weighted avg       0.97      0.98      0.97      1538
+ samples avg       0.96      0.97      0.96      1538
+
+Total Epoch 1450
+
+Performance per label : [[0.97987928 0.98993964 0.96579477 0.99597586 0.98189135 0.97987928
+  0.99396378 0.99597586 0.98189135 0.99396378]]
+Mean of performance : 0.9859154929577464
+              precision    recall  f1-score   support
+
+   pepperoni       0.94      0.99      0.96       137
+   mushrooms       0.97      0.99      0.98       146
+     peppers       0.92      0.97      0.95       152
+      olives       0.99      0.99      0.99       146
+       basil       0.96      0.98      0.97       145
+       bacon       0.96      0.98      0.97       162
+    broccoli       0.99      0.99      0.99       169
+   pineapple       1.00      0.99      0.99       149
+    tomatoes       0.96      0.98      0.97       164
+      onions       0.98      1.00      0.99       168
+
+   micro avg       0.97      0.99      0.98      1538
+   macro avg       0.97      0.99      0.98      1538
+weighted avg       0.97      0.99      0.98      1538
+ samples avg       0.97      0.98      0.97      1538
+
+Total Epoch 1500
+
+Performance per label : [[0.99195171 0.99597586 0.95573441 0.99195171 0.98591549 0.97987928
+  0.98390342 0.98591549 0.99396378 1.        ]]
+Mean of performance : 0.9865191146881287
+              precision    recall  f1-score   support
+
+   pepperoni       0.98      0.99      0.99       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.89      0.97      0.93       152
+      olives       0.97      1.00      0.99       146
+       basil       0.99      0.97      0.98       145
+       bacon       0.96      0.98      0.97       162
+    broccoli       0.96      0.99      0.98       169
+   pineapple       0.97      0.99      0.98       149
+    tomatoes       1.00      0.98      0.99       164
+      onions       1.00      1.00      1.00       168
+
+   micro avg       0.97      0.99      0.98      1538
+   macro avg       0.97      0.99      0.98      1538
+weighted avg       0.97      0.99      0.98      1538
+ samples avg       0.96      0.98      0.97      1538
+
+Total Epoch 1550
+
+Performance per label : [[0.99195171 0.99396378 0.95372233 0.99597586 0.95774648 0.97987928
+  0.99195171 0.98993964 0.98993964 1.        ]]
+Mean of performance : 0.984507042253521
+              precision    recall  f1-score   support
+
+   pepperoni       0.99      0.99      0.99       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.89      0.97      0.93       152
+      olives       0.99      0.99      0.99       146
+       basil       0.88      0.99      0.93       145
+       bacon       0.97      0.97      0.97       162
+    broccoli       0.99      0.98      0.99       169
+   pineapple       0.98      0.99      0.98       149
+    tomatoes       0.99      0.98      0.98       164
+      onions       1.00      1.00      1.00       168
+
+   micro avg       0.97      0.99      0.98      1538
+   macro avg       0.97      0.99      0.98      1538
+weighted avg       0.97      0.99      0.98      1538
+ samples avg       0.96      0.98      0.96      1538
+
+Total Epoch 1600
+
+Performance per label : [[0.98591549 0.99195171 0.94768612 0.99798793 0.98591549 0.97987928
+  0.99195171 0.98993964 0.96981891 0.99597586]]
+Mean of performance : 0.9837022132796779
+              precision    recall  f1-score   support
+
+   pepperoni       0.96      0.99      0.97       137
+   mushrooms       0.98      0.99      0.99       146
+     peppers       0.87      0.97      0.92       152
+      olives       1.00      0.99      1.00       146
+       basil       0.98      0.97      0.98       145
+       bacon       0.96      0.98      0.97       162
+    broccoli       0.99      0.98      0.99       169
+   pineapple       0.98      0.99      0.98       149
+    tomatoes       0.93      0.99      0.96       164
+      onions       0.99      1.00      0.99       168
+
+   micro avg       0.96      0.99      0.97      1538
+   macro avg       0.96      0.99      0.97      1538
+weighted avg       0.96      0.99      0.97      1538
+ samples avg       0.96      0.98      0.97      1538
+
+Total Epoch 1650
+
+Performance per label : [[0.97384306 0.98792757 0.98792757 0.99597586 0.9637827  0.98792757
+  0.98792757 0.98993964 0.98189135 0.99597586]]
+Mean of performance : 0.9853118712273641
+              precision    recall  f1-score   support
+
+   pepperoni       0.92      0.99      0.95       137
+   mushrooms       0.97      0.99      0.98       146
+     peppers       1.00      0.96      0.98       152
+      olives       0.99      1.00      0.99       146
+       basil       0.90      0.99      0.94       145
+       bacon       1.00      0.96      0.98       162
+    broccoli       0.99      0.97      0.98       169
+   pineapple       0.98      0.99      0.98       149
+    tomatoes       0.96      0.98      0.97       164
+      onions       0.99      1.00      0.99       168
+
+   micro avg       0.97      0.98      0.98      1538
+   macro avg       0.97      0.98      0.98      1538
+weighted avg       0.97      0.98      0.98      1538
+ samples avg       0.97      0.97      0.97      1538
+
+Total Epoch 1700
+
+Performance per label : [[0.98189135 0.99396378 0.98591549 0.99798793 0.97585513 0.97987928
+  0.99195171 0.99597586 0.97987928 0.99597586]]
+Mean of performance : 0.987927565392354
+              precision    recall  f1-score   support
+
+   pepperoni       0.94      0.99      0.97       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       1.00      0.95      0.98       152
+      olives       1.00      0.99      1.00       146
+       basil       0.93      0.99      0.96       145
+       bacon       0.97      0.97      0.97       162
+    broccoli       0.98      0.99      0.99       169
+   pineapple       1.00      0.99      0.99       149
+    tomatoes       0.96      0.98      0.97       164
+      onions       0.99      1.00      0.99       168
+
+   micro avg       0.98      0.99      0.98      1538
+   macro avg       0.98      0.99      0.98      1538
+weighted avg       0.98      0.99      0.98      1538
+ samples avg       0.97      0.98      0.97      1538
+
+Total Epoch 1750
+
+Performance per label : [[0.99798793 0.99396378 0.96780684 0.99798793 0.98189135 0.98390342
+  0.98792757 0.99597586 0.98189135 1.        ]]
+Mean of performance : 0.9889336016096578
+              precision    recall  f1-score   support
+
+   pepperoni       1.00      0.99      1.00       137
+   mushrooms       0.99      0.99      0.99       146
+     peppers       0.92      0.98      0.95       152
+      olives       1.00      0.99      1.00       146
+       basil       0.95      0.99      0.97       145
+       bacon       0.97      0.98      0.98       162
+    broccoli       0.97      1.00      0.98       169
+   pineapple       1.00      0.99      0.99       149
+    tomatoes       0.96      0.98      0.97       164
+      onions       1.00      1.00      1.00       168
+
+   micro avg       0.97      0.99      0.98      1538
+   macro avg       0.98      0.99      0.98      1538
+weighted avg       0.98      0.99      0.98      1538
+ samples avg       0.97      0.98      0.97      1538
