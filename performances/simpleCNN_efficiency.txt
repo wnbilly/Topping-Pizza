@@ -1,3 +1,49 @@
+50 epoch
+
+Performance per label : [[0.76582915 0.45628141 0.45628141 0.84120603 0.60703518 0.45628141
+  0.79095477 0.52562814 0.54773869 0.8080402 ]]
+Mean of performance : 0.5754272381909548
+              precision    recall  f1-score   support
+              
+   pepperoni       0.53      0.82      0.64       298
+   mushrooms       0.31      0.68      0.43       294
+     peppers       0.31      0.80      0.45       305
+      olives       0.65      0.79      0.72       301
+       basil       0.35      0.67      0.46       285
+       bacon       0.33      0.80      0.47       316
+    broccoli       0.56      0.77      0.65       273
+   pineapple       0.37      0.65      0.47       312
+    tomatoes       0.37      0.74      0.49       300
+      onions       0.49      0.77      0.60       295
+
+   micro avg       0.40      0.75      0.52      2979
+   macro avg       0.43      0.75      0.54      2979
+weighted avg       0.43      0.75      0.54      2979
+ samples avg       0.42      0.77      0.51      2979
+
+250 epoch
+
+Performance per label : [[0.76582915 0.45628141 0.45628141 0.84120603 0.60703518 0.45628141
+  0.79095477 0.52562814 0.54773869 0.8080402 ]]
+Mean of performance : 0.6255276381909548
+              precision    recall  f1-score   support
+
+   pepperoni       0.58      0.77      0.66       298
+   mushrooms       0.30      0.61      0.40       294
+     peppers       0.33      0.75      0.46       305
+      olives       0.70      0.83      0.76       301
+       basil       0.39      0.68      0.50       285
+       bacon       0.33      0.71      0.45       316
+    broccoli       0.59      0.80      0.68       273
+   pineapple       0.36      0.68      0.47       312
+    tomatoes       0.37      0.70      0.48       300
+      onions       0.66      0.73      0.69       295
+
+   micro avg       0.43      0.73      0.54      2979
+   macro avg       0.46      0.73      0.56      2979
+weighted avg       0.46      0.73      0.55      2979
+ samples avg       0.46      0.76      0.52      2979
+
 450 epoch
 
 Performance per label : [[0.75175879 0.45326633 0.44924623 0.84623116 0.60603015 0.45527638
