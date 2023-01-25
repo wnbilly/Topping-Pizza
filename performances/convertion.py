@@ -2,16 +2,16 @@ import re
 import json
 
 
-regex = r"Total Epoch (\d*)\n\nPerformance per label : \[\[(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\]\]\nMean of performance : (\d*\.\d*)\n\s*precision\s*recall\s*f1-score\s*support\n\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-z]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\n.+\n.+\n.+\n.+"
+regex = r"Total Epoch (\d*)\n\nPerformance per label : \[\[(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\]\]\nMean of performance : (\d*\.\d*)\n\s*precision\s*recall\s*f1-score\s*support\n\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n\s*([a-zA-Z_]*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*(\d*\.\d*)\s*\d*\n"
 
-nb_label=10
+nb_label=13
 
 regex = re.compile(regex)
 
 
 dico = {}
 
-with open('training_performance_evolution.txt', 'r') as f:
+with open('efficientNet_real_efficiency.txt', 'r') as f:
 
 	for text in regex.findall(f.read()):
 		idx = text[0]
@@ -37,6 +37,6 @@ with open('training_performance_evolution.txt', 'r') as f:
 			dico[idx]["f1-score"][label_name] = float(text[1 + nb_label + 4 + i*4])
 				
 
-with open('training_performance_evolution.json', 'w') as f:
+with open('efficientNet_real_efficiency.json', 'w') as f:
 	f.write(json.dumps(dico, indent=4))
 

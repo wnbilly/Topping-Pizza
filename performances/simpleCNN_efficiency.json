@@ -1,0 +1,461 @@
+{
+    "50": {
+        "mean of performance": 0.5754272381909548,
+        "performance": {
+            "pepperoni": 0.76582915,
+            "mushrooms": 0.45628141,
+            "peppers": 0.45628141,
+            "olives": 0.84120603,
+            "basil": 0.60703518,
+            "bacon": 0.45628141,
+            "broccoli": 0.79095477,
+            "pineapple": 0.52562814,
+            "tomatoes": 0.54773869,
+            "onions": 0.8080402
+        },
+        "precision": {
+            "pepperoni": 0.53,
+            "mushrooms": 0.31,
+            "peppers": 0.31,
+            "olives": 0.65,
+            "basil": 0.35,
+            "bacon": 0.33,
+            "broccoli": 0.56,
+            "pineapple": 0.37,
+            "tomatoes": 0.37,
+            "onions": 0.49
+        },
+        "recall": {
+            "pepperoni": 0.82,
+            "mushrooms": 0.68,
+            "peppers": 0.8,
+            "olives": 0.79,
+            "basil": 0.67,
+            "bacon": 0.8,
+            "broccoli": 0.77,
+            "pineapple": 0.65,
+            "tomatoes": 0.74,
+            "onions": 0.77
+        },
+        "f1-score": {
+            "pepperoni": 0.64,
+            "mushrooms": 0.43,
+            "peppers": 0.45,
+            "olives": 0.72,
+            "basil": 0.46,
+            "bacon": 0.47,
+            "broccoli": 0.65,
+            "pineapple": 0.47,
+            "tomatoes": 0.49,
+            "onions": 0.6
+        }
+    },
+    "250": {
+        "mean of performance": 0.6255276381909548,
+        "performance": {
+            "pepperoni": 0.76582915,
+            "mushrooms": 0.45628141,
+            "peppers": 0.45628141,
+            "olives": 0.84120603,
+            "basil": 0.60703518,
+            "bacon": 0.45628141,
+            "broccoli": 0.79095477,
+            "pineapple": 0.52562814,
+            "tomatoes": 0.54773869,
+            "onions": 0.8080402
+        },
+        "precision": {
+            "pepperoni": 0.58,
+            "mushrooms": 0.3,
+            "peppers": 0.33,
+            "olives": 0.7,
+            "basil": 0.39,
+            "bacon": 0.33,
+            "broccoli": 0.59,
+            "pineapple": 0.36,
+            "tomatoes": 0.37,
+            "onions": 0.66
+        },
+        "recall": {
+            "pepperoni": 0.77,
+            "mushrooms": 0.61,
+            "peppers": 0.75,
+            "olives": 0.83,
+            "basil": 0.68,
+            "bacon": 0.71,
+            "broccoli": 0.8,
+            "pineapple": 0.68,
+            "tomatoes": 0.7,
+            "onions": 0.73
+        },
+        "f1-score": {
+            "pepperoni": 0.66,
+            "mushrooms": 0.4,
+            "peppers": 0.46,
+            "olives": 0.76,
+            "basil": 0.5,
+            "bacon": 0.45,
+            "broccoli": 0.68,
+            "pineapple": 0.47,
+            "tomatoes": 0.48,
+            "onions": 0.69
+        }
+    },
+    "450": {
+        "mean of performance": 0.6247236180904523,
+        "performance": {
+            "pepperoni": 0.75175879,
+            "mushrooms": 0.45326633,
+            "peppers": 0.44924623,
+            "olives": 0.84623116,
+            "basil": 0.60603015,
+            "bacon": 0.45527638,
+            "broccoli": 0.7959799,
+            "pineapple": 0.54170854,
+            "tomatoes": 0.53768844,
+            "onions": 0.81005025
+        },
+        "precision": {
+            "pepperoni": 0.56,
+            "mushrooms": 0.29,
+            "peppers": 0.33,
+            "olives": 0.72,
+            "basil": 0.39,
+            "bacon": 0.34,
+            "broccoli": 0.6,
+            "pineapple": 0.37,
+            "tomatoes": 0.37,
+            "onions": 0.66
+        },
+        "recall": {
+            "pepperoni": 0.78,
+            "mushrooms": 0.61,
+            "peppers": 0.77,
+            "olives": 0.81,
+            "basil": 0.68,
+            "bacon": 0.78,
+            "broccoli": 0.78,
+            "pineapple": 0.66,
+            "tomatoes": 0.74,
+            "onions": 0.73
+        },
+        "f1-score": {
+            "pepperoni": 0.65,
+            "mushrooms": 0.4,
+            "peppers": 0.46,
+            "olives": 0.76,
+            "basil": 0.5,
+            "bacon": 0.48,
+            "broccoli": 0.68,
+            "pineapple": 0.48,
+            "tomatoes": 0.49,
+            "onions": 0.69
+        }
+    },
+    "650": {
+        "mean of performance": 0.628140703517588,
+        "performance": {
+            "pepperoni": 0.75276382,
+            "mushrooms": 0.46532663,
+            "peppers": 0.45929648,
+            "olives": 0.8361809,
+            "basil": 0.6080402,
+            "bacon": 0.46030151,
+            "broccoli": 0.8080402,
+            "pineapple": 0.53969849,
+            "tomatoes": 0.54271357,
+            "onions": 0.80904523
+        },
+        "precision": {
+            "pepperoni": 0.56,
+            "mushrooms": 0.3,
+            "peppers": 0.32,
+            "olives": 0.68,
+            "basil": 0.38,
+            "bacon": 0.34,
+            "broccoli": 0.62,
+            "pineapple": 0.37,
+            "tomatoes": 0.37,
+            "onions": 0.66
+        },
+        "recall": {
+            "pepperoni": 0.78,
+            "mushrooms": 0.59,
+            "peppers": 0.7,
+            "olives": 0.87,
+            "basil": 0.61,
+            "bacon": 0.74,
+            "broccoli": 0.75,
+            "pineapple": 0.65,
+            "tomatoes": 0.7,
+            "onions": 0.72
+        },
+        "f1-score": {
+            "pepperoni": 0.65,
+            "mushrooms": 0.4,
+            "peppers": 0.44,
+            "olives": 0.76,
+            "basil": 0.47,
+            "bacon": 0.47,
+            "broccoli": 0.68,
+            "pineapple": 0.47,
+            "tomatoes": 0.48,
+            "onions": 0.69
+        }
+    },
+    "1150": {
+        "mean of performance": 0.6748743718592964,
+        "performance": {
+            "pepperoni": 0.76482412,
+            "mushrooms": 0.51256281,
+            "peppers": 0.48140704,
+            "olives": 0.90251256,
+            "basil": 0.70552764,
+            "bacon": 0.48944724,
+            "broccoli": 0.85226131,
+            "pineapple": 0.55577889,
+            "tomatoes": 0.6160804,
+            "onions": 0.86834171
+        },
+        "precision": {
+            "pepperoni": 0.59,
+            "mushrooms": 0.31,
+            "peppers": 0.33,
+            "olives": 0.88,
+            "basil": 0.49,
+            "bacon": 0.34,
+            "broccoli": 0.71,
+            "pineapple": 0.38,
+            "tomatoes": 0.42,
+            "onions": 0.79
+        },
+        "recall": {
+            "pepperoni": 0.74,
+            "mushrooms": 0.51,
+            "peppers": 0.67,
+            "olives": 0.79,
+            "basil": 0.62,
+            "bacon": 0.65,
+            "broccoli": 0.79,
+            "pineapple": 0.64,
+            "tomatoes": 0.73,
+            "onions": 0.76
+        },
+        "f1-score": {
+            "pepperoni": 0.65,
+            "mushrooms": 0.38,
+            "peppers": 0.44,
+            "olives": 0.83,
+            "basil": 0.55,
+            "bacon": 0.45,
+            "broccoli": 0.75,
+            "pineapple": 0.47,
+            "tomatoes": 0.54,
+            "onions": 0.77
+        }
+    },
+    "1650": {
+        "mean of performance": 0.5625125628140702,
+        "performance": {
+            "pepperoni": 0.72562814,
+            "mushrooms": 0.43819095,
+            "peppers": 0.39396985,
+            "olives": 0.79497487,
+            "basil": 0.54572864,
+            "bacon": 0.4040201,
+            "broccoli": 0.74472362,
+            "pineapple": 0.53467337,
+            "tomatoes": 0.55879397,
+            "onions": 0.48442211
+        },
+        "precision": {
+            "pepperoni": 0.53,
+            "mushrooms": 0.31,
+            "peppers": 0.31,
+            "olives": 0.64,
+            "basil": 0.35,
+            "bacon": 0.32,
+            "broccoli": 0.53,
+            "pineapple": 0.36,
+            "tomatoes": 0.38,
+            "onions": 0.34
+        },
+        "recall": {
+            "pepperoni": 0.82,
+            "mushrooms": 0.71,
+            "peppers": 0.79,
+            "olives": 0.72,
+            "basil": 0.67,
+            "bacon": 0.77,
+            "broccoli": 0.71,
+            "pineapple": 0.63,
+            "tomatoes": 0.76,
+            "onions": 0.79
+        },
+        "f1-score": {
+            "pepperoni": 0.64,
+            "mushrooms": 0.43,
+            "peppers": 0.45,
+            "olives": 0.68,
+            "basil": 0.46,
+            "bacon": 0.45,
+            "broccoli": 0.61,
+            "pineapple": 0.46,
+            "tomatoes": 0.51,
+            "onions": 0.47
+        }
+    },
+    "2150": {
+        "mean of performance": 0.6693467336683417,
+        "performance": {
+            "pepperoni": 0.76080402,
+            "mushrooms": 0.50854271,
+            "peppers": 0.46532663,
+            "olives": 0.89949749,
+            "basil": 0.70050251,
+            "bacon": 0.47537688,
+            "broccoli": 0.85125628,
+            "pineapple": 0.54572864,
+            "tomatoes": 0.6120603,
+            "onions": 0.87437186
+        },
+        "precision": {
+            "pepperoni": 0.58,
+            "mushrooms": 0.32,
+            "peppers": 0.32,
+            "olives": 0.85,
+            "basil": 0.48,
+            "bacon": 0.34,
+            "broccoli": 0.71,
+            "pineapple": 0.38,
+            "tomatoes": 0.42,
+            "onions": 0.81
+        },
+        "recall": {
+            "pepperoni": 0.76,
+            "mushrooms": 0.58,
+            "peppers": 0.69,
+            "olives": 0.81,
+            "basil": 0.64,
+            "bacon": 0.7,
+            "broccoli": 0.78,
+            "pineapple": 0.67,
+            "tomatoes": 0.74,
+            "onions": 0.76
+        },
+        "f1-score": {
+            "pepperoni": 0.66,
+            "mushrooms": 0.41,
+            "peppers": 0.44,
+            "olives": 0.83,
+            "basil": 0.55,
+            "bacon": 0.46,
+            "broccoli": 0.74,
+            "pineapple": 0.48,
+            "tomatoes": 0.54,
+            "onions": 0.78
+        }
+    },
+    "2650": {
+        "mean of performance": 0.6728643216080402,
+        "performance": {
+            "pepperoni": 0.75577889,
+            "mushrooms": 0.50854271,
+            "peppers": 0.49145729,
+            "olives": 0.89949749,
+            "basil": 0.70050251,
+            "bacon": 0.47839196,
+            "broccoli": 0.85125628,
+            "pineapple": 0.55577889,
+            "tomatoes": 0.6120603,
+            "onions": 0.87537688
+        },
+        "precision": {
+            "pepperoni": 0.57,
+            "mushrooms": 0.32,
+            "peppers": 0.33,
+            "olives": 0.87,
+            "basil": 0.48,
+            "bacon": 0.33,
+            "broccoli": 0.7,
+            "pineapple": 0.38,
+            "tomatoes": 0.42,
+            "onions": 0.81
+        },
+        "recall": {
+            "pepperoni": 0.73,
+            "mushrooms": 0.57,
+            "peppers": 0.62,
+            "olives": 0.79,
+            "basil": 0.63,
+            "bacon": 0.64,
+            "broccoli": 0.8,
+            "pineapple": 0.65,
+            "tomatoes": 0.73,
+            "onions": 0.76
+        },
+        "f1-score": {
+            "pepperoni": 0.64,
+            "mushrooms": 0.41,
+            "peppers": 0.43,
+            "olives": 0.83,
+            "basil": 0.55,
+            "bacon": 0.44,
+            "broccoli": 0.75,
+            "pineapple": 0.48,
+            "tomatoes": 0.53,
+            "onions": 0.78
+        }
+    },
+    "3150": {
+        "mean of performance": 0.6609045226130653,
+        "performance": {
+            "pepperoni": 0.76482412,
+            "mushrooms": 0.47236181,
+            "peppers": 0.46432161,
+            "olives": 0.90351759,
+            "basil": 0.69648241,
+            "bacon": 0.47236181,
+            "broccoli": 0.84723618,
+            "pineapple": 0.53567839,
+            "tomatoes": 0.59698492,
+            "onions": 0.85527638
+        },
+        "precision": {
+            "pepperoni": 0.58,
+            "mushrooms": 0.32,
+            "peppers": 0.33,
+            "olives": 0.84,
+            "basil": 0.48,
+            "bacon": 0.34,
+            "broccoli": 0.69,
+            "pineapple": 0.37,
+            "tomatoes": 0.41,
+            "onions": 0.73
+        },
+        "recall": {
+            "pepperoni": 0.78,
+            "mushrooms": 0.67,
+            "peppers": 0.71,
+            "olives": 0.85,
+            "basil": 0.64,
+            "bacon": 0.71,
+            "broccoli": 0.8,
+            "pineapple": 0.71,
+            "tomatoes": 0.79,
+            "onions": 0.8
+        },
+        "f1-score": {
+            "pepperoni": 0.66,
+            "mushrooms": 0.43,
+            "peppers": 0.45,
+            "olives": 0.84,
+            "basil": 0.55,
+            "bacon": 0.46,
+            "broccoli": 0.74,
+            "pineapple": 0.49,
+            "tomatoes": 0.54,
+            "onions": 0.77
+        }
+    }
+}
